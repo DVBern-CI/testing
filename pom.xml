@@ -1,0 +1,30 @@
+<!--
+  ~ Copyright © 2017 DV Bern AG, Switzerland
+  ~
+  ~ Das vorliegende Dokument, einschliesslich aller seiner Teile, ist urheberrechtlich
+  ~ geschützt. Jede Verwertung ist ohne Zustimmung der DV Bern AG unzulässig. Dies gilt
+  ~ insbesondere für Vervielfältigungen, die Einspeicherung und Verarbeitung in
+  ~ elektronischer Form. Wird das Dokument einem Kunden im Rahmen der Projektarbeit zur
+  ~ Ansicht übergeben, ist jede weitere Verteilung durch den Kunden an Dritte untersagt.
+  -->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ch.dvbern.oss.maven</groupId>
+		<artifactId>parent</artifactId>
+		<version>1.0.3</version>
+	</parent>
+
+	<artifactId>jenkins-github-testing</artifactId>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>external.atlassian.jgitflow</groupId>
+				<artifactId>jgitflow-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>
